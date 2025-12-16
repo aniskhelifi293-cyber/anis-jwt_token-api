@@ -1,0 +1,8 @@
+Flask
+pycryptodome
+requests
+protobuf
+PyJWT
+gunicorn
+httpx
+Pillow
