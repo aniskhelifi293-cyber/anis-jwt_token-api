@@ -132,6 +132,9 @@ async def create_jwt(uid: str, password: str):
         raise
 
 # === Health Check Route (for debugging) ===
+@app.route('/ping')
+def ping():
+    return jsonify({"status": "alive"}), 200
 @app.route('/api/health', methods=['GET'])
 def health_check():
     logger.info("Health check endpoint called")
